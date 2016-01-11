@@ -55,7 +55,7 @@ years.to.download <-
 			"\\2" , 
 			grep( 
 				"/pumd_([0-9][0-9][0-9][0-9]).htm" , 
-				readLines( "http://www.bls.gov/cex/pumdhome.htm" ) , 
+				readLines( "http://www.bls.gov/cex/pumdhome.htm", warn=FALSE) , 
 				value = TRUE 
 			) 
 		) 
